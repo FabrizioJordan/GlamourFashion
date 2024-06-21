@@ -25,14 +25,14 @@
             QA
         </a>
         <nav class="flex flex-row gap-2 justify-center items-center
-		[&>A]:py-2.5 [&>A]:px-3.5 [&>A]:rounded-lg [&>A]:bg-[#e6e6e6] 
+		[&>*]:py-2.5 [&>*]:px-3.5 [&>*]:rounded-lg [&>*]:bg-[#e6e6e6] 
 		[&_svg]:size-5 [&_svg]:stroke-[#8a8a8a] [&_svg]:transition-colors [&_svg]:duration-300 ">
 			<a class="text-sm text-[#969696] transition-colors duration-300 hover:text-black" href="#" target="_blank" rel="noopener noreferrer">
 				Search
 			</a>
-			<a class="[&>svg]:hover:stroke-black" href="#" target="_blank" rel="noopener noreferrer">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
-			</a>
+			<button id="desktopHearth" class="[&>svg]:hover:stroke-black">
+				<svg id="desktopHearthSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+			</button>
 			<a class="[&>svg]:hover:stroke-black" href="#" target="_blank" rel="noopener noreferrer">
 				<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
 			</a>
@@ -58,15 +58,15 @@
             <a href="">
                 QA
             </a>
-            <nav class="w-full flex flex-col justify-center items-center
-            [&>A]:px-6 [&>A]:py-4 [&>A]:w-full [&>A]:bg-[#e6e6e6] [&>A]:flex [&>A]:justify-center [&>A]:items-center [&>A]:border-t [&>A]:border-[#cacaca] hover:[&>A]:bg-[#d1d1d1]
+            <nav class="w-full flex flex-col justify-center items-center 
+            [&>*]:px-6 [&>*]:py-4 [&>*]:w-full [&>*]:bg-[#e6e6e6] [&>*]:flex [&>*]:justify-center [&>*]:items-center [&>*]:border-t [&>*]:border-[#cacaca] hover:[&>*]:bg-[#d1d1d1]
             [&_svg]:size-5 [&_svg]:stroke-[#8a8a8a] [&_svg]:transition-colors [&_svg]:duration-300 ">
                 <a class="text-sm text-[#969696] transition-colors duration-300 hover:text-black" href="#" target="_blank" rel="noopener noreferrer">
                     Search
                 </a>
-                <a class="[&>svg]:hover:stroke-black" href="#" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
-                </a>
+                <button id="mobileHearth" class="[&>svg]:hover:stroke-black">
+                    <svg id="mobileHearthSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                </button>
                 <a class="[&>svg]:hover:stroke-black rounded-b-lg" href="#" target="_blank" rel="noopener noreferrer">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M17 17h-11v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /></svg>
                 </a>
@@ -82,5 +82,16 @@
     menuMobileBtn?.addEventListener('click', () => {
         menu?.classList.toggle('hidden')
     })  
+
+    const desktopHearth = document.getElementById('desktopHearth')
+    const mobileHearth = document.getElementById('mobileHearth')
+
+    desktopHearth?.addEventListener('click', () => {
+        const desktopHearthSVG = document.getElementById("desktopHearthSVG")
+        if(desktopHearthSVG){
+            desktopHearthSVG?.classList.toggle("fill-black")
+            desktopHearthSVG?.classList.toggle("!stroke-black")
+        }
+    })
 
 </script>

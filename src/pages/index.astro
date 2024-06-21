@@ -2,16 +2,22 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Home from '../components/Home.astro';
+import Show from '../components/Projects/Show.astro';
+import Testimonails from '../components/Testimonails.astro';
+import Subscribe from '../components/Subscribe.astro';
 ---
 
 <Layout title="Glamour Fashion | Home">
 	<Header />
-	<main class="relative py-4 min-[562px]:py-8 flex flex-col gap-20 min-[562px]:gap-28 justify-center items-center [&>*]:px-4 [&>*]:lg:px-0
-	[&>section]:w-full [&>section]:max-w-4xl [&>section]:m-auto [&>section]:flex [&>section]:flex-col [&>section]:justify-center [&>section]:items-start [&>section]:gap-8
+	<main class="relative py-4 min-[562px]:py-8 flex flex-col gap-16 min-[562px]:gap-20 justify-center items-center [&>*]:px-4 [&>*]:lg:px-0
+	[&>section]:w-full [&>section]:max-w-4xl [&>section]:m-auto [&>section]:gap-8
 	">
 		
 		<Home />
-		
+		<Show />
+		<Testimonails />
+		<Subscribe />
+
 		<div class="fixed bottom-2 right-1 md:right-6 !p-0">
 			<a href="#home" class="flex flex-col gap-2 justify-center items-center"><span class=" rotate-90 uppercase font-bold">Top</span>
 				<span class="w-[2px] h-12 bg-black"></span>
