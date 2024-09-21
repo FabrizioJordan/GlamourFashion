@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Header from '../components/Header.astro';
+
+  
+const posts = [
+    { title: "5 Summer Skincare Tips", image: "/blog1.jpg", excerpt: "Keep your skin glowing all summer long with these essential tips." },
+    { title: "The Ultimate Guide to Contouring", image: "/blog2.jpg", excerpt: "Master the art of contouring with our step-by-step tutorial." },
+    { title: "Sustainable Beauty: Our Eco-Friendly Picks", image: "/blog3.jpg", excerpt: "Discover our favorite environmentally conscious beauty products." },
+    // Add more blog posts as needed
+  ];
+    
+---
+
+
+<Layout title="Glamour Fashion | Blog">
+  
+  <Header />
+
+    <!--
+    <main class="py-4 min-[562px]:py-8 flex flex-col gap-16 min-[562px]:gap-20 justify-center items-center [&>*]:px-4 [&>*]:lg:px-0 [&>section]:w-full [&>section]:max-w-4xl [&>section]:m-auto [&>section]:gap-8">
+          <section class="flex flex-col gap-8 justify-center items-start">
+            <h1 class="text-4xl font-bold">GlamourFashion Blog</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {posts.map((post, index) => (
+                <div key={index} class="flex flex-col gap-4">
+                  <img src={post.image} alt={post.title} class="w-full h-48 object-cover rounded-lg" />
+                  <h2 class="text-2xl font-semibold">{post.title}</h2>
+                  <p>{post.excerpt}</p>
+                  <a href="#" class="text-[#e22f98] hover:underline">Read More</a>
+                </div>
+              ))}
+            </div>
+          </section>
+        </main>
+    -->
+
+  </Layout>

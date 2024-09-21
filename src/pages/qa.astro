@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Header from '../components/Header.astro';
+
+  const faqs = [
+    { question: "What is your return policy?", answer: "We offer a 30-day money-back guarantee on all our products. If you're not satisfied, simply return the item for a full refund." },
+    { question: "Are your products cruelty-free?", answer: "Yes, all of our products are cruelty-free and not tested on animals. We're committed to ethical beauty practices." },
+    { question: "Do you offer international shipping?", answer: "We currently ship to over 50 countries worldwide. Check our shipping page for a full list of destinations and rates." },
+    // Add more FAQs as needed
+  ];
+    
+---
+
+
+<Layout title="Glamour Fashion | QA">
+
+    <Header />
+
+
+    <!--
+    
+    <main class="py-4 min-[562px]:py-8 flex flex-col gap-16 min-[562px]:gap-20 justify-center items-center [&>*]:px-4 [&>*]:lg:px-0 [&>section]:w-full [&>section]:max-w-4xl [&>section]:m-auto [&>section]:gap-8">
+      <section class="flex flex-col gap-8 justify-center items-start">
+        <h1 class="text-4xl font-bold">Frequently Asked Questions</h1>
+        <div class="w-full space-y-6">
+          {faqs.map((faq, index) => (
+            <div key={index} class="bg-white rounded-lg shadow-md p-6">
+                <h2 class="text-xl font-semibold mb-2">{faq.question}</h2>
+                <p class="text-gray-600">{faq.answer}</p>
+              </div>
+          ))}
+        </div>
+        
+        <div class="w-full bg-gray-100 p-6 rounded-lg">
+          <h2 class="text-2xl font-semibold mb-4">Still have questions?</h2>
+          <p class="mb-4">Our customer support team is here to help. Get in touch with us!</p>
+          <button class="px-6 py-2 bg-[#e22f98] text-white rounded-lg hover:bg-[#a33776] transition-colors">
+            Contact Us
+          </button>
+        </div>
+      </section>
+
+      <section class="w-full max-w-4xl m-auto px-4 lg:px-0">
+        <h2 class="text-3xl font-bold mb-6">Still have questions?</h2>
+        <p class="mb-4">Our customer service team is here to help. Feel free to reach out to us anytime.</p>
+        <a href="#" class="inline-block bg-[#e22f98] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#a33776] transition-colors duration-300">Contact Us</a>
+      </section>
+
+    </main>
+    
+    -->
+
+  </Layout>

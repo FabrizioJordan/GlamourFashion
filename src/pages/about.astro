@@ -1,0 +1,184 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import Header from '../components/Header.astro';
+
+import placeholderUser from "../assets/images/about/person.png";
+import aboutUsImage from "../assets/images/about/aboutUs.png";
+import ourTeamImage from "../assets/images/about/ourTeam.jpg";
+
+---
+
+<Layout title="Glamour Fashion | About">
+
+    <Header />
+
+      <main class="flex flex-col gap-8">
+
+        <section class="py-4 min-[562px]:py-8 flex flex-col gap-8 md:gap-16 min-[562px]:gap-20 justify-center items-center">
+          <section class="w-full max-w-4xl m-auto px-4 lg:px-0">
+            <h1 class="text-4xl font-bold mb-8">GlamourFashion</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+              <div>
+                <p class="mb-4">GlamourFashion is your ultimate destination for beauty and style. Founded in 2024, we've been dedicated to bringing you the latest trends and highest quality beauty products from around the world.</p>
+                <p class="mb-4">Our mission is to empower individuals to express their unique beauty and feel confident in their own skin. We believe that beauty is not just about how you look, but how you feel.</p>
+              </div>
+              <div>
+                <img src={ourTeamImage?.src} alt="GlamourFashion Team" class="rounded-lg shadow-lg  " />
+              </div>
+            </div>
+          </section>
+          
+          <section class="w-full max-w-4xl m-auto px-4 lg:px-0">
+            <h2 class="text-3xl font-bold mb-6">Our Values</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <li class="bg-[#f3f3f3] p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Quality</h3>
+                <p>We source only the best products, ensuring that everything we offer meets our high standards.</p>
+              </li>
+              <li class="bg-[#f3f3f3] p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Innovation</h3>
+                <p>We're always on the lookout for the latest beauty innovations and trends to bring to our customers.</p>
+              </li>
+              <li class="bg-[#f3f3f3] p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Inclusivity</h3>
+                <p>We believe beauty is for everyone, and our products reflect the diversity of our customers.</p>
+              </li>
+            </ul>
+          </section>
+        </section>
+  
+        
+        <div class="min-h-screen bg-white text-black max-w-4xl px-4 lg:px-0">
+          <section class="py-4 md:py-10">
+            <article class="mb-10">
+              <img
+                src={aboutUsImage?.src}
+                alt="About us banner"
+                class="w-full h-[400px] object-cover rounded-md"
+                width="800"
+                height="400"
+                style={{ aspectRatio: "800/400", objectFit: "cover" }}
+              />
+              <div class="mt-6 space-y-4">
+                <h2 class="text-3xl font-bold">About Us</h2>
+                <p>
+                  Welcome to GlamourFashion, where we believe in the power of beauty and fashion to transform lives. Our
+                  mission is to provide high-quality, stylish clothing and accessories that empower individuals to express
+                  their unique style and confidence.
+                </p>
+                <p>
+                  Founded in 2021, GlamourFashion has quickly become a go-to destination for fashion enthusiasts around the
+                  world. Our curated collections feature the latest trends and timeless classics, ensuring that there is
+                  something for everyone.
+                </p>
+                <p>
+                  We are committed to sustainability and ethical practices, working with suppliers who share our values. Our
+                  goal is to make fashion accessible and enjoyable for all, while making a positive impact on the world.
+                </p>
+              </div>
+            </article>
+            <section class="mb-10">
+              <h2 class="text-black text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Meet the Team</h2>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/a3f2b37d-0ed0-4b6e-9cee-1e987db3a112.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">Founder &amp; CEO</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Alexandra Price</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/3cddb862-a9a2-4d0f-b116-26f5de9b9c22.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">Creative Director</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Elijah Woods</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/054df489-9ed1-42c2-8145-791b635104c9.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">Lead Designer</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Sophia Liu</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg"
+                    style='background-image: url("https://cdn.usegalileo.ai/sdxl10/b2669f68-e0d8-4bca-a3b3-35f777fa0177.png");'
+                  ></div>
+                  <div>
+                    <p class="text-black text-base font-medium leading-normal">Marketing Head</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Nathan Smith</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="@container">
+                <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+                  <div class="flex justify-center items-center flex-col gap-2 text-center">
+                    <h1
+                      class="text-black tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                    >
+                      Join Our Community
+                    </h1>
+                    <p class="text-black text-base font-normal leading-normal max-w-[720px">Subscribe to our newsletter for the latest trends, exclusive offers, and more.</p>
+                  </div>
+                  <div class="flex flex-1 justify-center">
+                    <label class="flex flex-col min-w-40 h-14 max-w-[480px] flex-1 @[480px]:h-16">
+                      <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                        <input
+                          placeholder="Enter your email"
+                          class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black focus:outline-0 focus:ring-0 border-none bg-[#EEEEEE] focus:border-none h-full placeholder:text-[#6B6B6B] px-4 rounded-r-none border-r-0 pr-2 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"
+                          value=""
+                        />
+                        <div class="flex items-center justify-center rounded-r-lg border-l-0 border-none bg-[#EEEEEE] pr-2">
+                          <button
+                            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-black text-[#FFFFFF] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                          >
+                            <span class="truncate">Subscribe</span>
+                          </button>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </secyt>
+          <footer class="p-4 border-t">
+            <p class="text-center text-gray-600">2024 GlamourFashion. With 💖 and Astro by @FabricioJordán.</p>
+          </footer>
+        </div>
+    
+
+      </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</Layout>
