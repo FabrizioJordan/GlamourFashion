@@ -2,15 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
-  
-const posts = [
-    { title: "5 Summer Skincare Tips", image: "/blog1.jpg", excerpt: "Keep your skin glowing all summer long with these essential tips." },
-    { title: "The Ultimate Guide to Contouring", image: "/blog2.jpg", excerpt: "Master the art of contouring with our step-by-step tutorial." },
-    { title: "Sustainable Beauty: Our Eco-Friendly Picks", image: "/blog3.jpg", excerpt: "Discover our favorite environmentally conscious beauty products." },
-    // Add more blog posts as needed
-  ];
-
+import blogImg1 from "../assets/images/blog/blogImg1.png"
+import blogImg2 from "../assets/images/blog/blogImg2.png"
+import blogImg3 from "../assets/images/blog/blogImg3.png"
+import blogImg4 from "../assets/images/blog/blogImg4.png"
     
 ---
 
@@ -19,26 +16,100 @@ const posts = [
   
   <Header />
 
-  <!--
-  
-  
-  <main class="py-4 min-[562px]:py-8 flex flex-col gap-16 min-[562px]:gap-20 justify-center items-center [&>*]:px-4 [&>*]:lg:px-0 [&>section]:w-full [&>section]:max-w-4xl [&>section]:m-auto [&>section]:gap-8">
-    <section class="flex flex-col gap-8 justify-center items-start">
-      <h1 class="text-4xl font-bold">GlamourFashion Blog</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {posts.map((post, index) => (
-          <div class="flex flex-col gap-4">
-            <img src={post.image} alt={post.title} class="w-full h-48 object-cover rounded-lg" />
-            <h2 class="text-2xl font-semibold">{post.title}</h2>
-            <p>{post.excerpt}</p>
-            <a href="#" class="text-[#e22f98] hover:underline">Read More</a>
-          </div>
-        ))}
-      </div>
-    </section>
-  </main>
-  
-  
-  -->
+  <main class="py-12 min-[562px]:py-8 flex flex-col gap-16 min-[562px]:gap-20 justify-center items-center [&>section]:w-full max-w-4xl [&>section]:m-auto [&>section]:gap-8 [&>*]:px-4">
 
+        <section class="flex flex-1 justify-center">
+          <div class="">
+
+            <article class="relative w-full p-4 min-[380px]:p-12 rounded-lg text-white flex flex-col gap-48 justify-center items-start">
+              <div class="z-10"></div>
+              <footer class="z-10 flex flex-col gap-8 justify-center items-start sm:pr-32">
+                  <div class="flex flex-col gap-2">
+                      <h4 class="text-4xl md:text-5xl font-extrabold">Blog</h4>
+                  </div>
+              </footer>
+              <div class="w-full h-full z-0 image-2 bg-cover bg-center brightness-75 absolute top-0 left-0 right-0 bottom-0 rounded-lg"></div>
+            </article>
+
+            <article class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex flex-col gap-3">
+                <p class="text-black text-4xl font-black leading-tight tracking-[-0.033em]">The Latest Fashion Insights</p>
+                <p class="text-[#6B6B6B] text-base font-normal leading-normal">Stay updated with the latest trends and tips from our fashion experts.</p>
+              </div>
+            </article>
+
+            <section class="[&>article>div]:flex [&>article>div]:flex-col-reverse [&>article>div]:gap-4 
+            [&>article_header>img]:max-w-[600px] [&>article_header>img]:w-full [&>article_header>img]:aspect-video [&>article_header>img]:rounded-lg [&>article_header>img]:object-cover">
+              <article class="p-4">
+                <div class="flex items-stretch justify-between gap-4 rounded-lg bg-[#FFFFFF] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                  <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                    <p class="text-black text-base font-bold leading-tight">5 Must-Have Accessories for Your Summer Wardrobe</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Discover the essential pieces that will complete your sunny day outfits.</p>
+                    <a href="#" class="text-[#e22f98] hover:underline">Read More</a>
+                  </div>
+                  <header class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1">
+                    <img src={blogImg2.src} alt="">
+                  </header>
+                </div>
+              </article>
+              <article class="p-4">
+                <div class="flex items-stretch justify-between gap-4 rounded-lg bg-[#FFFFFF] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                  <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                    <p class="text-black text-base font-bold leading-tight">The Evolution of Streetwear: From Subculture to High Fashion</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Explore the journey of streetwear as it takes over the fashion world.</p>
+                    <a href="#" class="text-[#e22f98] hover:underline">Read More</a>
+                  </div>
+                  <header class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1">
+                    <img src={blogImg3.src} alt="">
+                  </header>
+                </div>
+              </article>
+              <article class="p-4">
+                <div class="flex items-stretch justify-between gap-4 rounded-lg bg-[#FFFFFF] p-4 shadow-[0_0_4px_rgba(0,0,0,0.1)]">
+                  <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                    <p class="text-black text-base font-bold leading-tight">Sustainable Fashion: Brands That Are Changing the Industry</p>
+                    <p class="text-[#6B6B6B] text-sm font-normal leading-normal">Learn about brands that prioritize sustainability without compromising on style.</p>
+                    <a href="#" class="text-[#e22f98] hover:underline">Read More</a>
+                  </div>
+                  <header class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg flex-1">
+                    <img src={blogImg4.src} alt="">
+                  </header>
+                </div>
+              </article>
+            </section>
+
+            <article class="flex items-center justify-center p-4">
+              <a href="#" class="flex size-10 items-center justify-center">
+                <div class="text-black" data-icon="CaretLeft" data-size="18px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-black rounded-full bg-[#EEEEEE]" href="#">1</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-black rounded-full" href="#">2</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-black rounded-full" href="#">3</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-black rounded-full" href="#">4</a>
+              <a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-black rounded-full" href="#">5</a>
+              <a href="#" class="flex size-10 items-center justify-center">
+                <div class="text-black" data-icon="CaretRight" data-size="18px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" fill="currentColor" viewBox="0 0 256 256">
+                    <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+                  </svg>
+                </div>
+              </a>
+            </article>
+          </div>
+        </section>
+
+      </main>
+
+      <Footer />
   </Layout>
+
+
+  <style>
+    .image-2{
+      background-image: url("../assets/images/blog/blogImg1.png");
+    }
+  </style>
