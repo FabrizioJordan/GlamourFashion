@@ -10,6 +10,7 @@ const posts = [
     { title: "Sustainable Beauty: Our Eco-Friendly Picks", image: "/blog3.jpg", excerpt: "Discover our favorite environmentally conscious beauty products." },
     // Add more blog posts as needed
   ];
+
     
 ---
 
@@ -23,7 +24,7 @@ const posts = [
       <h1 class="text-4xl font-bold">GlamourFashion Blog</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         {posts.map((post, index) => (
-          <div key={index} class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4">
             <img src={post.image} alt={post.title} class="w-full h-48 object-cover rounded-lg" />
             <h2 class="text-2xl font-semibold">{post.title}</h2>
             <p>{post.excerpt}</p>
