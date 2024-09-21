@@ -1,47 +1,119 @@
 ---
-import Featured from "../Projects/WhatShow/Featured.astro"
-import NewArrivals from "../Projects/WhatShow/NewArrivals.astro"
-import Sale from "../Projects/WhatShow/Sale.astro"
-import BestSellers from "../Projects/WhatShow/BestSellers.astro"
+import Featured from "../Projects/WhatShow/Featured.astro";
+import NewArrivals from "../Projects/WhatShow/NewArrivals.astro";
+import Sale from "../Projects/WhatShow/Sale.astro";
+import BestSellers from "../Projects/WhatShow/BestSellers.astro";
+
+import propertiesImg1 from "../../assets/images/properties/properties1.png";
+import propertiesImg2 from "../../assets/images/properties/properties2.png";
+import propertiesImg3 from "../../assets/images/properties/properties3.png";
+import propertiesImg4 from "../../assets/images/properties/properties4.png";
 
 ---
 
-<section class="flex flex-col justify-center items-start">
-    <ul class="flex flex-row flex-wrap justify-start items-center gap-8 px-4 pt-4 border-b-2 border-[#ff46a35d] text-[#5e1e3c] font-medium leading-8
-    [&_button]:transition-colors [&_button]:duration-300">
-        <li>
-            <button id="featured" class="initTitle-1 !font-bold !text-black">Featured</button>
-        </li>
-        <li>
-            <button id="newArrivals" class="initTitle-2">New Arrivals</button>
-        </li>
-        <li>
-            <button id="sale" class="initTitle-3">Sale</button>
-        </li>
-        <li>
-            <button id="bestSellers" class="initTitle-4">Best Sellers</button>
-        </li>
-    </ul>
+<section class="flex flex-col justify-center items-start gap-6 md:gap-12">
 
-    <section class="max-w-3xl overflow-hidden
-    [&>article]:opacity-0 [&>article]:transition-opacity [&>article]:duration-500">
-        <article class="initText-1 flex !opacity-100">
-            <Featured/>
-        </article>
-        
-        <article class="initText-2 hidden flex">
-            <NewArrivals/>
-        </article>
-        
-        <article class="initText-3 hidden flex">
-            <Sale/>
-        </article>
+    <section class="flex flex-col gap-4">
 
-        <article class="initText-4 hidden flex">
-            <BestSellers />
-        </article>
+        <ul class="flex flex-row flex-wrap justify-start items-center gap-8 px-4 pt-4 border-b-2 border-[#ff46a35d] text-[#5e1e3c] font-medium leading-8
+        [&_button]:transition-colors [&_button]:duration-300">
+            <li>
+                <button id="featured" class="initTitle-1 !font-bold !text-black">Featured</button>
+            </li>
+            <li>
+                <button id="newArrivals" class="initTitle-2">New Arrivals</button>
+            </li>
+            <li>
+                <button id="sale" class="initTitle-3">Sale</button>
+            </li>
+            <li>
+                <button id="bestSellers" class="initTitle-4">Best Sellers</button>
+            </li>
+        </ul>
+
+        <section class="max-w-3xl overflow-hidden
+        [&>article]:opacity-0 [&>article]:transition-opacity [&>article]:duration-500">
+            <article class="initText-1 flex !opacity-100">
+                <Featured/>
+            </article>
+            
+            <article class="initText-2 hidden flex">
+                <NewArrivals/>
+            </article>
+            
+            <article class="initText-3 hidden flex">
+                <Sale/>
+            </article>
+
+            <article class="initText-4 hidden flex">
+                <BestSellers />
+            </article>
+
+        </section>
 
     </section>
+
+        <section class="grid grid-cols-[repeat(auto-fit,minmax(184px,1fr))] gap-3 py-4">
+        
+      </section>
+
+    <div class="py-4 min-[562px]:py-8 flex flex-col gap-16 min-[562px]:gap-20 justify-center items-center">
+        <section class="w-full max-w-4xl m-auto">
+          <h1 class="text-4xl font-bold mb-8">Our Beauty Properties</h1>
+          <section class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-8">
+
+            <article class="flex flex-col gap-3 pb-3">
+                <header class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl">
+                    <img class="rounded-lg w-full h-full object-cover"  src={propertiesImg1?.src} alt="">
+                </header>
+                <div class="space-y-3">
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Radiant Skin</p>
+                    <p class="text-gray-600 text-sm font-normal leading-normal">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Modi, ipsum,.
+                    </p>
+                    <a href="#" class="text-[#e22f98] font-medium hover:underline">Learn more</a>
+                </div>
+            </article>
+            <article class="flex flex-col gap-3 pb-3">
+                <header class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl">
+                    <img class="rounded-lg w-full h-full object-cover" src={propertiesImg2?.src} alt=""></header>
+                <div class="space-y-3">
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Radiant Skin</p>
+                    <p class="text-gray-600 text-sm font-normal leading-normal">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Modi, ipsum,.
+                    </p>
+                    <a href="#" class="text-[#e22f98] font-medium hover:underline">Learn more</a>
+                </div>
+            </article>
+            <article class="flex flex-col gap-3 pb-3">
+                <header class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl">
+                    <img class="rounded-lg w-full h-full object-cover" src={propertiesImg3?.src} alt="">
+                </header>
+                <div class="space-y-3">
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Radiant Skin</p>
+                    <p class="text-gray-600 text-sm font-normal leading-normal">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Modi, ipsum.
+                    </p>
+                    <a href="#" class="text-[#e22f98] font-medium hover:underline">Learn more</a>
+                </div>
+            </article>
+            <article class="flex flex-col gap-3 pb-3">
+                <header class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl">
+                    <img class="rounded-lg w-full h-full object-cover" src={propertiesImg4?.src} alt="">
+                </header>
+                <div class="space-y-3">
+                    <p class="text-[#1C160C] text-base font-medium leading-normal">Radiant Skin</p>
+                    <p class="text-gray-600 text-sm font-normal leading-normal">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Modi, ipsum,.
+                    </p>
+                    <a href="#" class="text-[#e22f98] font-medium hover:underline">Learn more</a>
+                </div>
+            </article>
+
+          </section>
+        </section>
+    </div>
+
 </section>
 
 
@@ -80,3 +152,4 @@ import BestSellers from "../Projects/WhatShow/BestSellers.astro"
         }
     }
 </script>
+
